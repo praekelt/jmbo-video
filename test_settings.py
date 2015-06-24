@@ -18,7 +18,7 @@ DATABASES = {
 }
 
 INSTALLED_APPS = (
-    'post',
+    'video',
     'ckeditor',
     'jmbo',
     'photologue',
@@ -39,7 +39,7 @@ INSTALLED_APPS = (
     'south',
 )
 
-ROOT_URLCONF = 'post.tests.urls'
+ROOT_URLCONF = 'video.tests.urls'
 
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
