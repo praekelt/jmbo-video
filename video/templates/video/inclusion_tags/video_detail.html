@@ -4,7 +4,9 @@
 {% block content %}
     {% jmbocache 3600 'object-detail-inclusion' object.id object.modified request.page %}
 
-        <div id="object-detail-inclusion-{{ object.id }}">{% trans "Loading the player..." %}</div>
+        <div class="video">
+            <div id="object-detail-inclusion-{{ object.id }}">{% trans "Loading the player..." %}</div>
+        </div>
 
         <script type="text/javascript">
             var di = {file: '{{ object.stream }}'};
